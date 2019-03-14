@@ -1,0 +1,10 @@
+server:
+  port: 9000
+zuul:
+  routes:
+    api-1:
+      path: /api/query
+      url: http://localhost:8080/
+    api-2:
+      path: /club/**
+      url: http://localhost:8082/
